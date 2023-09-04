@@ -303,7 +303,6 @@ img {
 /* Tablet screens */
 @media only screen and (min-width: 768px) {
     .feutures .list {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 24px;
@@ -366,13 +365,6 @@ img {
 /* Phone screens */
 .portfolio-section {
     display: none;
-}
-
-/* Tablet screens */
-@media screen and (min-width: 768px) {
-    .portfolio-section {
-
-    }
 }
 
 /* Desktop screens */
@@ -461,15 +453,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1158px) {
-    .team-title {
-    }
-}
-
-.team-section-list {
-    /* width: max-content; */
-}
-
 @media only screen and (min-width: 768px) {
     .team-section-list {
       display: flex;
@@ -479,11 +462,7 @@ img {
     }
 }
 
-@media only screen and (min-width: 1158px) {
-    .team-section-list {
-        flex-basis: calc((100% - 72px) / 4);
-    }
-}
+
 
 
 /* Phone screen */
@@ -644,7 +623,6 @@ img {
 
 /* Phone screens */
 .customers-icons-container {
-    /* width: calc((100% - 120px) / 6); */
     flex-basis: calc((100% - 16px) / 2);
     height: 88px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -686,7 +664,6 @@ img {
 
 .customers-icons {
     fill: currentColor;
-    
     flex-basis: calc((100% - 16px) / 2);
 }
 
