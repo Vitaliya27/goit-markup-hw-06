@@ -50,16 +50,16 @@ img {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 736px;
-        padding: 0 16px;
+        padding: 0 15px;
     }
 }
 
 /* Desktop screens */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
-        padding: 0 16px;
+        padding: 0 15px;
     }
 }
 
@@ -307,6 +307,29 @@ img {
 
 /* what are we doing */
 
+/* Phone screens */
+
+.portfolio-section {
+    display: none;
+}
+
+/* Tablet screens */
+
+@media screen and (min-width: 768px) {
+    .portfolio-section {
+
+    }
+}
+
+/* Desktop screens */
+
+@media screen and (min-width: 1158px) {
+    .portfolio-section {
+        display: flex;
+        padding: 15px;
+    }
+}
+
 .portfolio-title {
     color: var(--navyblue, #2E2F42);
     font-size: 36px;
@@ -332,9 +355,12 @@ img {
 
 /* team section */
 
+/* Phone screens */
+
 .team-section {
     background-color: #F4F4FD;
-    padding: 120px 0 120px 0;
+    padding: 96px 82px;
+    gap: 72px;
 }
 
 .team-section .container .list {
