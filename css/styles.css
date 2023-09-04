@@ -240,24 +240,26 @@ img {
 
 /* Feutures section */
 
+/* Phone screens */
 .feutures {
-    padding: 120px 0;
+    padding: 96px 16px;
 
 }
 
 .feutures .container{
     margin: 0 auto;
+    padding: 0;
 }
 
 .feutures .list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
 }
 
-.feutures-title-item {
-    width: calc((100% - 72px) / 4);
-}
 
+
+/* Phone and Tablet screens */
 .feutures-icons-box {
     display: flex;
     align-items: center;
@@ -266,6 +268,7 @@ img {
     background-color: #f4f4fd;
     border-radius: 4px;
     margin-bottom: 8px;
+    display: none;
 }
 
 
@@ -283,38 +286,89 @@ img {
     overflow: hidden;
   }
 
+/* Phone screens */
 .feutures-item {
     color: var(--navyblue, #2E2F42);
     font-family: "Roboto";
-    font-size: 20px;
+    font-size: 36px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.2; 
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
 }
 
-.feutures-text {
-    color: var(--slate, #434455);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5; 
-    letter-spacing: 0.02em;
-    width: 264px;
-    display: flex;
+/* Tablet screens */
+@media only screen and (min-width: 768px) {
+    .feutures .list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    .feutures-title-item {
+        flex-basis: calc((100% - 24px) / 2);
+        width: 351px;
+  }
+    .feutures-item  {
+        justify-content: start;
+    }
+} 
+
+/* Desktop screens */
+@media only screen and (min-width: 1158px) {
+    .feutures .list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+    .feutures-title-item {
+        width: 264px;
+        align-items: flex-start;
+    }
+    .feutures-item {
+        color: var(--navyblue, #2E2F42);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2em; 
+        letter-spacing: 0.4px;
+        margin-bottom: 8px;
+        display: flex;
+    }  
+    .feutures-icons-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+    .feutures-text {
+        color: var(--SLATE, #434455);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5em;
+        letter-spacing: 0.32px;
+        display: flex;
+        width: 264px;
+    }
 }
 
 /* what are we doing */
 
 /* Phone screens */
-
 .portfolio-section {
     display: none;
 }
 
 /* Tablet screens */
-
 @media screen and (min-width: 768px) {
     .portfolio-section {
 
@@ -322,7 +376,6 @@ img {
 }
 
 /* Desktop screens */
-
 @media screen and (min-width: 1158px) {
     .portfolio-section {
         display: flex;
