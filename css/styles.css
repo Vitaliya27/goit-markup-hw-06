@@ -34,16 +34,33 @@ img {
     display: block
 }
 
-/* .container {
-    display: flex;
-} */
-
-
+/* Phone screens */
 
 .container {
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
+    min-width: 320px;
+    max-width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* Tablet screens */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 736px;
+        padding: 0 16px;
+    }
+}
+
+/* Desktop screens */
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 16px;
+    }
 }
 
 /* Header section */
