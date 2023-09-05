@@ -179,11 +179,17 @@ img {
 
 /* Hero section */
 
+.hero .container {
+    margin: 0;
+    padding: 0;
+
+}
+
 /* Phone screens */
 .hero  {
     max-width: 1440px;
-    height: 432px;
-    padding: 112px 0;
+    height: 436px;
+    padding: 112px 54px;
     margin: 0 auto;
     display: block;
 
@@ -216,7 +222,7 @@ img {
 
 @media screen and (min-width: 768px) {
     .hero {
-        height: 432px;
+        height: 436px;
     
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)), 
@@ -241,7 +247,7 @@ img {
 
 @media screen and (min-width: 1158px) {
     .hero {
-        height: 436px;
+        height: 600px;
     
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)), 
@@ -274,10 +280,42 @@ img {
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    margin: 0 auto 72px;
-    width: 320px;
+    margin-bottom: 36px;
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
+    margin-bottom: 72px;
 }
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+    line-height: 107.143%; /* 107.143% */
+    letter-spacing: 1.12px;
+    margin-bottom: 36px;
+    width: 496px;
+  }
+
+  .hero {
+  }
+
+  .hero .container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+    .hero-title {
+      font-size: 56px;
+      line-height: 107.143%; /* 107.143% */
+      letter-spacing: 1.12px;
+      margin-bottom: 48px;
+    }
+  
+    .hero .container {
+      max-width: 1440px;
+    }
+  }
 
 .button {
     background: var(--iris, #4D5AE5);
