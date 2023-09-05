@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
         <div class="header-content container">
             <nav class="navigation">
                 <a class="logo link" href="./index.html">Web <span class="header-span">Studio</span></a>
-                <ul class="list">
+                <ul class="nav-list list">
                     <li><a class="nav-link current" href="./index.html">Studio</a></li>
                     <li><a class="nav-link link" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="nav-link link" href="">Contacts</a></li>
@@ -29,6 +29,16 @@
                     <li><a class="address-item link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="mobile-menu-icon" width="32" height="22">
+                <use href="./images/icons.svg#burger-menu"></use>
+              </svg>
+            </button>
         </div>
     </header>
 
@@ -458,7 +468,31 @@
         </div>
       </div>
       
+      <!-- Mobile menu -->
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="mobile-btn-close js-close-menu">
+          <svg class="menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#modal-close"></use>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Products</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+          <li><a href="" class="link">Career</a></li>
+        </ul>
+      </div>
 
       <script src="./js/modal.js"></script>
+
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+      <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

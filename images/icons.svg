@@ -156,6 +156,15 @@
         </clipPath>
       </defs>
     </symbol>
+
+    <symbol id="burger-menu" viewBox="0 0 47 32" fill="none">
+      <path stroke="#2E2F42" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"></path>
+    </symbol>
+
+    <symbol id="close-menu" viewBox="0 0 8 8" fill="none">
+      <path d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z" stroke="#2E2F42"/>
+      
+    </symbol>
   </defs>
 </svg>
 
