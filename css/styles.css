@@ -223,20 +223,10 @@ img {
 @media screen and (min-width: 768px) {
     .hero {
         height: 436px;
-    
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
-        rgba(46, 47, 66, 0.7)), 
-        url(../images/hero-image-tab@1x.jpg);
     }
-}
-
-@media screen and (min-width: 768px) {
-    .hero {
-        height: 436px;
-    }
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi), 
-    screen and (min-resolution: 2dppx) {
+    @media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+   only screen and (min-width: 768px) and (min-resolution: 192dpi),
+   only screen and (min-width: 768px) and (min-resolution: 2dppx) {
         .hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
             rgba(46, 47, 66, 0.7)), 
@@ -260,9 +250,9 @@ img {
         padding: 188px 0;
         height: 600px;
     }
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi), 
-    screen and (min-resolution: 2dppx) {
+    @media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+    only screen and (min-width: 1158px) and (min-resolution: 192dpi),
+    only screen and (min-width: 1158px) and (min-resolution: 2dppx) {
         .hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
             rgba(46, 47, 66, 0.7)), 
