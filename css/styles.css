@@ -976,6 +976,7 @@ img {
 .footer .container {
     display: flex;
     flex-direction: column;
+    margin-bottom: auto;
 }
 .footer-content {
     margin: 0 auto;
@@ -1123,7 +1124,6 @@ img {
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 72px;
-        
     }
 
     .footer-content {
@@ -1172,6 +1172,95 @@ img {
         margin: 0;
     }
 }
+
+@media only screen and (max-width: 767.98px) {
+    .footer-form-input {
+      margin-bottom: 16px;
+    }
+  }
+  
+  .footer-form-input::placeholder {
+      color: var(--WHITE, #FFF);
+  }
+  .btn-footer {
+      min-width: 165px;
+      margin: 0 auto;
+      padding: 0;
+      padding: 8px 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+  }
+  .icon-telegram {
+      margin-left: 8px;
+  }
+  
+  /* Desktop screens */
+  @media only screen and (min-width: 1158px) {
+  
+        .footer {
+            padding: 140px 0;
+        }
+  
+      .footer .container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          margin: 0;
+          gap: 0;
+      }
+  
+      .footer-content {
+          margin: 0;
+          margin-right: 120px;
+      }
+      
+      .footer-content .logo {
+          display: flex;
+          justify-content: flex-start;
+      }
+
+      .text-footer {
+        width: 264px;
+      }
+  
+      .socail-icons-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin: 0;
+          margin-right: 80px;
+      }
+  
+      .footer-social-title {
+        justify-content: flex-start;
+      }
+  
+      .footer-form {
+        margin: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+      }
+  
+      .form-title {
+          display: flex;
+          justify-content: flex-start;
+      }
+  
+      .subscribe-form {
+          gap: 24px;
+      }
+  
+      .footer-form-input {
+          width: 264px;
+      }
+  
+      .btn-footer {
+          margin: 0;
+      }
+  }
 
 
 /* Modal window */
